@@ -1,24 +1,21 @@
-@import './assets/scss/functions';
-@import './assets/scss/variables';
-
-
+@import "./assets/scss/functions";
+@import "./assets/scss/variables";
 
 $new-font-sizes: (
-  7: $font-size-base *.85,
-  8: $font-size-base *.75,
-  9: $font-size-base *.60,
-  10: $font-size-base *.50,
+  7: $font-size-base * 0.85,
+  8: $font-size-base * 0.75,
+  9: $font-size-base * 0.6,
+  10: $font-size-base * 0.5,
 );
 
 $font-sizes: map-merge($font-sizes, $new-font-sizes);
-
 
 $new-border-widths: (
   6: 6px,
   7: 7px,
   8: 8px,
   9: 9px,
-  10: 10px
+  10: 10px,
 );
 
 $border-widths: map-merge($border-widths, $new-border-widths);
@@ -26,36 +23,34 @@ $border-widths: map-merge($border-widths, $new-border-widths);
 $new-danger: #ff0077;
 $new-info: #00ffea;
 $new-light: #f3eeff;
-$epicode1:#5726c3;
-$epicode2:#8625a5;
-$epicode3:#cb2376;
-
+$epicode1: #5726c3;
+$epicode2: #8625a5;
+$epicode3: #cb2376;
 
 $new-theme-colors: (
-  'danger': $new-danger,
-  'info':$new-info, 
-  'light': $new-light,
-  'epicode-1':$epicode1,
-'epicode-2':$epicode2,
-'epicode-3':$epicode3,
+  "danger": $new-danger,
+  "info": $new-info,
+  "light": $new-light,
+  "epicode-1": $epicode1,
+  "epicode-2": $epicode2,
+  "epicode-3": $epicode3,
 );
-
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
 
-$input-btn-padding-y:.75rem;
-$input-btn-padding-x:2.5rem ;
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 2.5rem;
 
 $btn-padding-y: $input-btn-padding-y;
 $btn-padding-x: $input-btn-padding-x;
 
-$grid-gutter-width: .5rem;
+$grid-gutter-width: 0.5rem;
 $gutter-width: $grid-gutter-width;
 
 $card-color: $new-info;
-$card-bg:$dark;
+$card-bg: $dark;
 $card-border-radius: 2rem;
 
 $badge-border-radius: 1em;
 
-@import './assets/scss/bootstrap.scss';
+@import "./assets/scss/bootstrap.scss";
